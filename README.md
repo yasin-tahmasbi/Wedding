@@ -20,7 +20,7 @@ The visual design was created by two creative individuals, while I handled all t
 ## 👤 Credits
 
 - **Developed by:** [Yasin Tahmasbi](https://yasintahmasbi.ir/)
-- **Design by:** [Hanieh Hamzeh](https://www.linkedin.com/in/haniehamzeh/) & [Sara Zargan](https://www.linkedin.com/in/sara-zargan-80b7b02b6/)
+- **Design by:** [Sara Zargan](https://www.linkedin.com/in/sara-zargan-80b7b02b6/)
 - **Mentorship:** [Parsa Ghorbanian](https://www.instagram.com/parsa_ghorbanian_web/#)
 - **Date:** Oct , 2025
 
