@@ -2,7 +2,7 @@
 A personal project to improve animation and layout skills using HTML &amp; CSS
 
 
-🔗 [Live Demo](https://yasin-tahmasbi.github.io/Aureum-Luxury-sports-club-services/)
+🔗 [Live Demo](https://yasin-tahmasbi.github.io/Wedding/)
 
 ##
 
