@@ -1,0 +1,661 @@
+:root {
+    --white: rgba(255, 255, 255, 1);
+}
+
+body {
+    background-color: var(--white);
+    font-family: 'lora', serif;
+}
+
+
+
+.container {
+    width: 100%;
+
+    >header {
+        position: relative;
+        height: 100%;
+        min-height: 834px;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: 20s linear infinite;
+
+            &:nth-of-type(1) {
+                animation-name: img1;
+            }
+
+            &:nth-of-type(2) {
+                animation-name: img2;
+            }
+
+            &:nth-of-type(3) {
+                animation-name: img3;
+            }
+
+            &:nth-of-type(4) {
+                animation-name: img4;
+            }
+        }
+
+        >.hiddenMenu {
+            background: rgb(255, 255, 255);
+            width: 100%;
+            min-height: 693px;
+            padding: 32px 100px;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            left: 0;
+            width: 100%;
+            background: white;
+            transform: translateY(-110%);
+            opacity: 0;
+            pointer-events: none;
+            transition: transform 1.2s ease, opacity 0.4s ease;
+            z-index: 999;
+
+            >.hiddenMenuWrapper {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+
+                >.navBtn {
+                    >button {
+                        color: black;
+                        font-size: 16px;
+                        font-weight: 700;
+                        padding: 12px 24px;
+                        border: 1px solid black;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        font-family: inherit;
+                        cursor: pointer;
+                        transition: 0.2s linear;
+
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.2);
+                        }
+                    }
+                }
+
+                >.navLogo {
+                    color: black;
+                    font-family: 'playball';
+                    font-weight: 400;
+                    font-size: 24px;
+                }
+
+                >.hiddenNavMenuIcon{
+                cursor: pointer;
+            }
+            }
+
+            >.hiddenMenuText {
+                >ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 37px;
+                    font-size: 96px;
+                    font-weight: 400;
+
+                    >li {
+                        >a {
+                            color: black;
+                            position: relative;
+
+                            &:hover {
+                                &::after {
+                                    width: 100%;
+                                    transform: translateY(0%);
+                                    background-color: rgba(0, 0, 0, 0.2);
+                                }
+                            }
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 0%;
+                                min-height: 20px;
+                                background-color: rgba(0, 0, 0, 0.4);
+                                display: block;
+                                top: 50%;
+                                left: 0;
+                                transition: 0.3s linear;
+                                transform: translateY(60%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        >nav {
+            top: 39px;
+            left: 80px;
+            right: 80px;
+            padding: 0 20px;
+            min-height: 80px;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(15px);
+
+            >.navBtn {
+                >button {
+                    color: var(--white);
+                    font-size: 16px;
+                    font-weight: 700;
+                    padding: 12px 24px;
+                    border: 1px solid var(--white);
+                    background-color: transparent;
+                    font-family: inherit;
+                    cursor: pointer;
+                    transition: 0.2s linear;
+
+                    &:hover {
+                        color: rgba(255, 255, 255, 0.8);
+                        background-color: rgba(255, 255, 255, 0.2);
+                    }
+                }
+            }
+
+            >.navLogo {
+                color: var(--white);
+                font-family: 'playball';
+                font-weight: 400;
+                font-size: 24px;
+            }
+
+            >.navMenuIcon{
+                cursor: pointer;
+            }
+        }
+
+        >.hero {
+            color: var(--white);
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 29%;
+            left: 92px;
+            right: 92px;
+
+            >.heroTxtLeft {
+                width: 50%;
+                max-width: 326px;
+
+                >p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    margin-bottom: 12px;
+                }
+
+                >h2 {
+                    font-family: 'playball';
+                    font-weight: 400;
+                    font-size: 64px;
+                    line-height: 68px;
+                }
+            }
+
+            >.heroTxtRight {
+                width: 50%;
+                max-width: 316px;
+                font-size: 16px;
+                padding-top: 7%;
+
+                p {
+                    &:nth-of-type(1) {
+                        margin-bottom: 12px;
+                        font-weight: 400;
+                    }
+
+                    &:nth-of-type(2) {
+                        line-height: 24px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    /*------------------------- sec1 -------------------------*/
+    >.sec1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        width: 100%;
+        min-height: 739px;
+
+        >.sec1Col1 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 40px;
+            overflow: hidden;
+            height: 739px;
+
+            >img {
+                height: 409px;
+                display: block;
+                animation: slideUp 10s linear infinite;
+            }
+        }
+
+        >.sec1Col2 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            gap: 24px;
+            padding: 0 90px;
+            text-align: center;
+
+            >h2 {
+                font-family: 'playball';
+                color: black;
+                font-weight: 400;
+                font-size: 48px;
+            }
+
+            >p {
+                color: black;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+
+        >.sec1Col3 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 40px;
+            overflow: hidden;
+            height: 739px;
+
+            >img {
+                height: 409px;
+                display: block;
+                animation: slideUp 10s linear infinite;
+            }
+        }
+    }
+
+    /*------------------------- sec1 -------------------------*/
+
+    /*------------------------- sec2 -------------------------*/
+    >.sec2 {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 52px;
+        padding: 150px 81px;
+        position: relative;
+        overflow: hidden;
+        color: var(--white);
+
+        &::after {
+            content: '';
+            background-image: url(../img/sec2Bg.png);
+            background-size: cover;
+            background-position: center;
+            filter: blur(6px);
+            background-color: rgba(12, 12, 12, 0.8);
+            background-blend-mode: overlay;
+            position: absolute;
+            top: -2%;
+            left: -2%;
+            z-index: -1;
+            overflow: hidden;
+            width: 105%;
+            height: 105%;
+        }
+
+        >.sec2Row1 {
+            font-family: 'playball';
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 60px;
+            text-align: center;
+        }
+
+        >.sec2Row2 {
+            display: flex;
+            justify-content: space-between;
+
+
+            >div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+
+                h4 {
+                    font-weight: 400;
+                    font-size: 48px;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        >.sec2Row3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            text-align: center;
+
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 32px;
+            }
+
+            button {
+                color: var(--white);
+                font-size: 16px;
+                font-weight: 700;
+                padding: 12px 24px;
+                border: 1px solid var(--white);
+                background-color: transparent;
+                font-family: inherit;
+                cursor: pointer;
+                transition: 0.2s linear;
+
+                &:hover {
+                    color: rgba(255, 255, 255, 0.8);
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+    }
+
+    /*------------------------- sec2 -------------------------*/
+
+
+
+    /*------------------------- sec3 -------------------------*/
+    >.sec3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-items: center;
+        padding: 150px 81px;
+
+        >.sec3Col1,
+        .sec3Col3 {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        >.sec3Col2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            >h4 {
+                position: relative;
+                font-weight: 700;
+                font-size: 96px;
+                line-height: 32px;
+            }
+
+            >button {
+                font-family: 'lora';
+                color: var(--white);
+                border: 1px solid var(--white);
+                padding: 12px 24px;
+                background-color: black;
+                margin-top: 32px;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 0.2s linear;
+
+                &:hover {
+                    color: black;
+                    background-color: rgba(0, 0, 0, 0.135);
+                }
+            }
+        }
+
+        >.sec3Col3 {
+            display: flex;
+        }
+    }
+
+    /*------------------------- sec3 -------------------------*/
+
+    /*------------------------- sec4 -------------------------*/
+    >.sec4 {
+        width: 100%;
+        height: 100%;
+        min-height: 680px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &::after {
+            content: '';
+            background-image: url(../img/FooterImg.png);
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px);
+            background-color: rgba(12, 12, 12, 0.6);
+            background-blend-mode: overlay;
+            position: absolute;
+            top: -2%;
+            left: -2%;
+            z-index: -1;
+            overflow: hidden;
+            width: 105%;
+            height: 105%;
+        }
+
+        >div {
+            &:nth-of-type(1) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+                text-align: center;
+                margin-top: 230px;
+
+                >p {
+                    color: var(--white);
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+
+                >button {
+                    padding: 12px 24px;
+                    color: var(--white);
+                    font-weight: 600;
+                    font-size: 16px;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    border: 1px solid white;
+                    font-family: 'lora';
+                    text-transform: capitalize;
+                    cursor: pointer;
+                    transition: 0.2s linear;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.2);
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                padding: 40px 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                >:nth-child(1) {
+                    display: flex;
+                    gap: 32px;
+                    align-items: center;
+
+                    strong {
+                        color: var(--white);
+                        font-weight: 400;
+                        font-size: 14px;
+
+                        a {
+                            color: rgba(255, 255, 255, 0.8);
+                            text-decoration: underline;
+                            text-underline-offset: 6px;
+                            transition: all 0.15s linear;
+                            margin: 0 5px;
+
+                            &:hover {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+                >:nth-child(2) {
+                    color: white;
+
+                    span {
+                        color: rgba(255, 255, 255, 0.8);
+                        cursor: pointer;
+                        text-decoration: underline;
+                        text-underline-offset: 6px;
+                        transition: all 0.15s linear;
+
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*------------------------- sec4 -------------------------*/
+}
+
+.active {
+    transform: translateY(120px) !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+
+.red {
+    border: 3px solid red;
+}
+
+
+/* hero animation */
+
+@keyframes img1 {
+
+    0%,
+    23%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    98% {
+        opacity: 0;
+    }
+}
+
+@keyframes img2 {
+
+    0%,
+    23% {
+        opacity: 0;
+    }
+
+    25%,
+    48% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes img3 {
+
+    0%,
+    48% {
+        opacity: 0;
+    }
+
+    50%,
+    73% {
+        opacity: 1;
+    }
+
+    75%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes img4 {
+
+    0%,
+    73% {
+        opacity: 0;
+    }
+
+    75%,
+    98% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* hero animation */
+
+
+/* sec1 animation */
+
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-1796px);
+    }
+}
+
+/* sec1 animation */

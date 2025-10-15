@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'playball';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Playball-Regular.woff') format('woff');
+}
+
+/* lora */
+
+@font-face {
+    font-family: 'lora';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Lora-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'lora';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Lora.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'lora';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/Lora-Italic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'lora';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Lora-Bold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'lora';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/Lora-BoldItalic.woff') format('woff');
+}
