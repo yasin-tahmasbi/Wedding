@@ -36,24 +36,19 @@ I'm always happy to connect! Reach out or follow me on:
 
 ## 📷 Preview | Screenshots
 
-![Homepage Screenshot](img/sc1.png)
+![Homepage Screenshot](assets/img/sc1.png)
 
 
-![Homepage Screenshot](img/sc2.png)
+![Homepage Screenshot](assets/img/sc2.png)
 
 
-![Homepage Screenshot](img/sc3.png)
+![Homepage Screenshot](assets/img/sc3.png)
 
 
-![Homepage Screenshot](img/sc4.png)
+![Homepage Screenshot](assets/img/sc4.png)
 
 
-![Homepage Screenshot](img/sc5.png)
+![Homepage Screenshot](assets/img/sc5.png)
 
 
-![Homepage Screenshot](img/sc6.png)
-
-
-![Homepage Screenshot](img/sc7.png)
-"# Aureum-Luxury-sports-club-services" 
-
+![Homepage Screenshot](assets/img/sc6.png)
