@@ -51,4 +51,4 @@ I'm always happy to connect! Reach out or follow me on:
 ![Homepage Screenshot](assets/img/sc5.png)
 
 
-
+![Homepage Screenshot](assets/img/sc6.png)
