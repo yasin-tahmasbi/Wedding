@@ -7,7 +7,7 @@ A personal project to improve animation and layout skills using HTML &amp; CSS
 ##
 
 This project is a personal front-end practice aimed at enhancing **animation and user interaction skills**. 
-The visual design was created by two creative individuals, while I handled all the coding with HTML, CSS (Grid and Flexbox), and a portion of JavaScript for the menu and interactions.
+The visual design was created by one creative individuals, while I handled all the coding with HTML, CSS (Grid and Flexbox), and a portion of JavaScript for the menu and interactions.
 
 ## 🛠️ Features
 
@@ -20,19 +20,17 @@ The visual design was created by two creative individuals, while I handled all t
 ## 👤 Credits
 
 - **Developed by:** [Yasin Tahmasbi](https://yasintahmasbi.ir/)
-- **Design by:** [Hanieh Hamzeh](https://www.linkedin.com/in/haniehamzeh/) & [Sara Zargan](https://www.linkedin.com/in/sara-zargan-80b7b02b6/)
+- **Design by:** [Sara Zargan](https://www.linkedin.com/in/sara-zargan-80b7b02b6/)
 - **Mentorship:** [Parsa Ghorbanian](https://www.instagram.com/parsa_ghorbanian_web/#)
 - **Date:** Oct , 2025
 
 
-## **🔗 Connect with Me**
+## **🔗 Want to reach out?**
 
-I'm always happy to connect! Reach out or follow me on:
+Everything you need is on my website 👇
 
--  [**Instagram**](https://www.instagram.com/yasin_tahmasbii)
--  [**LinkedIn**](https://www.linkedin.com/in/yasin-tahmasbi)
--  [**GitHub**](https://github.com/yasin-tahmasbi)
--  [**Email**](mailto:yasintahmasb@gmail.com)
+-  [**www.yasintahmasbi.ir**](https://www.yasintahmasbi.ir)
+
 
 ## 📷 Preview | Screenshots
 
