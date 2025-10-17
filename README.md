@@ -25,14 +25,12 @@ The visual design was created by one creative individuals, while I handled all t
 - **Date:** Oct , 2025
 
 
-## **🔗 Connect with Me**
+## **🔗 Want to reach out?**
 
-I'm always happy to connect! Reach out or follow me on:
+Everything you need is on my website 👇
 
--  [**Instagram**](https://www.instagram.com/yasin_tahmasbii)
--  [**LinkedIn**](https://www.linkedin.com/in/yasin-tahmasbi)
--  [**GitHub**](https://github.com/yasin-tahmasbi)
--  [**Email**](mailto:yasintahmasb@gmail.com)
+-  [**www.yasintahmasbi.ir**](https://www.yasintahmasbi.ir)
+
 
 ## 📷 Preview | Screenshots
 
