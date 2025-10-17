@@ -7,7 +7,7 @@ A personal project to improve animation and layout skills using HTML &amp; CSS
 ##
 
 This project is a personal front-end practice aimed at enhancing **animation and user interaction skills**. 
-The visual design was created by two creative individuals, while I handled all the coding with HTML, CSS (Grid and Flexbox), and a portion of JavaScript for the menu and interactions.
+The visual design was created by one creative individuals, while I handled all the coding with HTML, CSS (Grid and Flexbox), and a portion of JavaScript for the menu and interactions.
 
 ## 🛠️ Features
 
